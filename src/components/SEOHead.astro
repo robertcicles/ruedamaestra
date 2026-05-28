@@ -1,0 +1,19 @@
+---
+const { title, description, url } = Astro.props;
+const siteTitle = "RuedaMaestra";
+const siteUrl = url ?? "https://ruedamaestra.example/";
+const pageTitle = title ? `${title} · ${siteTitle}` : siteTitle;
+---
+<meta charset="utf-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+<title>{pageTitle}</title>
+<meta name="description" content={description} />
+<meta name="theme-color" content="#08110d" />
+<meta property="og:type" content="website" />
+<meta property="og:title" content={pageTitle} />
+<meta property="og:description" content={description} />
+<meta property="og:url" content={siteUrl} />
+<meta property="og:site_name" content={siteTitle} />
+<meta name="twitter:card" content="summary_large_image" />
+<meta name="twitter:title" content={pageTitle} />
+<meta name="twitter:description" content={description} />

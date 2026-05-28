@@ -1,0 +1,25 @@
+---
+import BaseLayout from "../../layouts/BaseLayout.astro";
+import StrategyCard from "../../components/StrategyCard.astro";
+---
+<BaseLayout
+  title="Estrategias de ruleta"
+  description="Guía de estrategias de ruleta para probar sistemas con saldo ficticio." 
+  url="/estrategias/"
+>
+  <section class="page-intro">
+    <h1>Estrategias de ruleta: guía para probar sistemas con saldo ficticio</h1>
+    <p>Ninguna estrategia garantiza beneficios. La ruleta europea tiene una ventaja matemática para la casa debido al cero. Usa estas guías como material educativo y de simulación.</p>
+  </section>
+
+  <div class="strategy-grid">
+    <StrategyCard title="Martingala" description="Aumenta la apuesta tras cada pérdida para recuperar pérdidas con una ganancia mínima." difficulty="Media" risk="Alto" />
+    <StrategyCard title="Fibonacci" description="Usa la secuencia de Fibonacci para ajustar apuestas con pérdidas y ganancias." difficulty="Media" risk="Moderado" />
+    <StrategyCard title="D’Alembert" description="Incrementa y reduce la apuesta para controlar la progresión." difficulty="Baja" risk="Moderado" />
+    <StrategyCard title="Labouchere" description="Suma y elimina extremos de una secuencia para planificar la inversión." difficulty="Alta" risk="Alto" />
+    <StrategyCard title="Dos docenas" description="Divide el riesgo en dos docenas para una cobertura amplia pero con pagos menores." difficulty="Baja" risk="Bajo" />
+    <StrategyCard title="Columnas" description="Apuesta a columnas para cubrir 12 números con pago 2:1." difficulty="Baja" risk="Moderado" />
+    <StrategyCard title="Seisenas" description="Usa seisenas para una apuesta intermedia entre plena y exterior." difficulty="Media" risk="Moderado" />
+    <StrategyCard title="12 números" description="Selecciona un rango de 12 números para una apuesta con mayor probabilidad." difficulty="Baja" risk="Moderado" />
+  </div>
+</BaseLayout>

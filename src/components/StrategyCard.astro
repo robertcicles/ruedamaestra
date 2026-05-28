@@ -1,0 +1,12 @@
+---
+const { title, description, difficulty, risk } = Astro.props;
+---
+<article class="strategy-card">
+  <h3>{title}</h3>
+  <p>{description}</p>
+  <div class="strategy-meta">
+    <span>{difficulty}</span>
+    <span>{risk}</span>
+  </div>
+  <a href="#" class="strategy-link">Leer más</a>
+</article>

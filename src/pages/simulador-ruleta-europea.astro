@@ -1,0 +1,17 @@
+---
+import BaseLayout from "../layouts/BaseLayout.astro";
+import RouletteSimulator from "../components/RouletteSimulator.astro";
+import "../styles/roulette.css";
+---
+<BaseLayout
+  title="Simulador de ruleta europea gratis"
+  description="Usa el simulador de RuedaMaestra para practicar con una ruleta interactiva, fichas arrastrables y saldo ficticio."
+  url="/simulador-ruleta-europea/"
+>
+  <section class="page-intro">
+    <h1>Simulador de ruleta europea gratis</h1>
+    <p>Usa el simulador de RuedaMaestra para practicar con una ruleta europea interactiva, colocar fichas sobre la mesa y probar distintas formas de apuesta con saldo ficticio.</p>
+  </section>
+  <RouletteSimulator />
+  <script type="module" src="/scripts/roulette-simulator.js" defer></script>
+</BaseLayout>

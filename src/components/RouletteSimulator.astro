@@ -1,0 +1,88 @@
+---
+---
+<section class="simulator-shell">
+  <div class="app">
+    <header>
+      <div class="brand">
+        <div class="logo" aria-hidden="true"></div>
+        <div>
+          <h1>RuedaMaestra</h1>
+          <p class="subtitle">Ruleta europea online, simulador avanzado y estrategias de apuesta.</p>
+        </div>
+      </div>
+      <div class="stats">
+        <div class="stat">
+          <small>Saldo</small>
+          <strong id="balance">1.000 €</strong>
+        </div>
+        <div class="stat">
+          <small>Apostado</small>
+          <strong id="currentBet">0 €</strong>
+        </div>
+        <div class="stat">
+          <small>Último resultado</small>
+          <strong id="lastNet">—</strong>
+        </div>
+      </div>
+    </header>
+
+    <div class="simulator-content">
+      <section class="card wheel-card">
+        <div class="wheel-wrap">
+          <div class="pointer"></div>
+          <div class="wheel" id="wheel"></div>
+          <div class="number-ring" id="numberRing"></div>
+          <div class="ball" id="ball"></div>
+        </div>
+
+        <div class="result">
+          <div class="label">Número ganador</div>
+          <div class="result-number" id="resultNumber">—</div>
+          <div id="resultText">Haz tus apuestas y gira la ruleta.</div>
+        </div>
+
+        <div class="controls">
+          <button class="spin" id="spinBtn">Girar ruleta</button>
+          <button class="secondary" id="repeatBtn">Reapostar</button>
+          <button class="secondary" id="doubleBtn">Doblar</button>
+          <button class="secondary" id="undoBtn">Deshacer</button>
+          <button class="secondary" id="clearBtn">Limpiar apuestas</button>
+          <button class="danger wide" id="resetBtn">Reiniciar juego</button>
+        </div>
+
+        <p class="notice">
+          Este simulador no intenta predecir ninguna ruleta real. Los casinos online utilizan RNG privados, auditados y certificados.
+          Aquí se usa <strong>Web Crypto API</strong> con muestreo sin sesgo para generar resultados uniformes entre 0 y 36. Las fichas se pueden seleccionar con clic o arrastrar directamente sobre las zonas de juego integradas en la mesa.
+        </p>
+      </section>
+
+      <section class="card table-card">
+        <div class="toolbar">
+          <h2>Mesa de apuestas</h2>
+          <div class="chips" id="chips"></div>
+          <div class="drag-hint">Arrastra la ficha directamente sobre la mesa de juego. En móvil vertical, la mesa se muestra en formato largo para poder subir y bajar; en horizontal, se escala para encajar mejor.</div>
+        </div>
+
+        <div class="board-scroll">
+          <div class="board-shell">
+            <div class="board" id="board"></div>
+          </div>
+        </div>
+
+        <div class="info-grid">
+          <div class="panel">
+            <h3>Apuestas activas</h3>
+            <div class="bets-list" id="betsList"></div>
+          </div>
+
+          <div class="panel">
+            <h3>Historial</h3>
+            <div class="history">
+              <div class="history-balls" id="history"></div>
+            </div>
+          </div>
+        </div>
+      </section>
+    </div>
+  </div>
+</section>
