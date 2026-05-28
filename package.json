@@ -9,6 +9,6 @@
   },
   "dependencies": {},
   "devDependencies": {
-    "astro": "^3.9.0"
+    "astro": "^4.0.0"
   }
 }
