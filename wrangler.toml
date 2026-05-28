@@ -1,0 +1,6 @@
+name = "ruedamaestra"
+compatibility_date = "2026-05-28"
+type = "javascript"
+
+[env.production]
+name = "ruedamaestra"

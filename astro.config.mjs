@@ -5,5 +5,10 @@ export default defineConfig({
   output: "static",
   markdown: {
     syntaxHighlight: false
+  },
+  vite: {
+    ssr: {
+      external: []
+    }
   }
 });
